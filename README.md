@@ -2,7 +2,7 @@
 
 ### What to expect
  -  rails 5.2
- - react 
+ - react
  - redux
  - react router
  - eslint and prettier for linting
