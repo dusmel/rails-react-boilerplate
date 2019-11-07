@@ -10,6 +10,7 @@
 
  ### How to get started
  - ```git clone https://github.com/dusmel/rails-react-boilerplate.git new_app```
+ - ```change git remote link```
  - ```bundle install```
  - ```yarn install```
  - ```vi config/database.yml``` and change the `username` and the `password` in the default block with the correct credential
@@ -18,7 +19,7 @@
 
  ### what to add on update
   - [ ] rubocop for ruby linting
-  - [ ] set environmental variable with Figaro gem
+  - [x] set environmental variable with Figaro gem
   
 
 
