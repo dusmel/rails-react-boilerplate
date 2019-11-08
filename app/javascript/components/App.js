@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import HelloWorld from './HelloWorld';
 import Button from './button';
 import store from '../store';
-import 'semantic-ui-css/semantic.min.css';
 
 const App = () => {
   return (
