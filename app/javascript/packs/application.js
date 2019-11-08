@@ -13,7 +13,7 @@
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-import 'bootstrap/dist/css/bootstrap.css';
+
 import 'semantic-ui-css/semantic.min.css';
 
 console.log('Hello World from Webpacker');
