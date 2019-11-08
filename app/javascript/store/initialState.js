@@ -1,7 +1,7 @@
 const initialState = {
   greeting: {
-    greet: "Hello",
-  }
-}
+    greet: 'Hello',
+  },
+};
 
 export default initialState;

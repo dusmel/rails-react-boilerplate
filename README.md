@@ -18,7 +18,7 @@
 
 
  ### what to add on update
-  - [ ] rubocop for ruby linting
+  - [x] rubocop for ruby linting
   - [x] set environmental variable with Figaro gem
   
 

@@ -1,6 +1,25 @@
 {
   "name": "react-rails-app",
   "private": true,
+  "scripts": {
+    "lint": "eslint app/javascript/**/*.{js,jsx}",
+    "lint:fix": "npm run lint:js -- --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "{app,spec}/**/*.rb": [
+      "rubocop --safe-auto-correct",
+      "git add"
+    ],
+    "app/javascript/**/*.{js,jsx}": [
+      "eslint",
+      "git add"
+    ]
+  },
   "dependencies": {
     "@babel/preset-react": "^7.0.0",
     "@rails/webpacker": "^4.0.7",
@@ -28,6 +47,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
     "prettier": "^1.18.2",
     "webpack-dev-server": "^3.7.2"
   }
