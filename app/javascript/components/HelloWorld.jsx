@@ -5,6 +5,8 @@ import { Button, Icon, Label } from 'semantic-ui-react';
 import { changeGreeting } from '../actions/changeGreeting';
 import './helloWorld.scss';
 
+require('dotenv').config();
+
 class HelloWorld extends Component {
   state = {};
 
