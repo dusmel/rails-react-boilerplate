@@ -14,6 +14,13 @@
 # the additional setup, and require it from the spec files that actually need
 # it.
 #
+require "simplecov"
+SimpleCov.start "rails" do
+  add_filter "/bin/"
+  add_filter "/db/"
+  add_filter "/spec/" # for rspec
+  add_filter "/test/" # for minitest
+end
 # capybara configuration
 require "capybara/rspec"
 Capybara.app_host = "http://localhost:3000"
